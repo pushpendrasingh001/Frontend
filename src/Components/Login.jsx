@@ -38,8 +38,8 @@ function Login() {
   };
   return (
     <div className=''>
-<dialog id="my_modal_3" className="modal">
-  <div className="modal-box">
+<dialog id="my_modal_3" className="modal ">
+  <div className="modal-box  dark:bg-slate-800 dark:text-white">
     <form onSubmit={handleSubmit(onSubmit)} method="dialog">
     
     <Link to="/" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"onClick={() => document.getElementById("my_modal_3").close()}> ✕ </Link>
@@ -49,7 +49,7 @@ function Login() {
     <div className='mt-4 space-y-2'>
 <span>Email</span>
 <br/>
-<input type="email" placeholder='Enter Your Email' className='w-80 px-3 py-1 border rounded-md outline-none' {...register("email", { required: true })} />
+<input type="email" placeholder='Enter Your Email' className='w-80 px-3 py-1 border rounded-md outline-none  dark:bg-slate-800 dark:text-white' {...register("email", { required: true })} />
 <br />
 {errors.email && <span className='text-sm text-red-500'>This field is required</span>}
    </div>
@@ -57,7 +57,7 @@ function Login() {
    <div className='mt-4 space-y-2'>
 <span>Password</span>
 <br/>
-<input type="password" placeholder='Enter Your Password' className='w-80 px-3 py-1 border rounded-md outline-none' {...register("password", { required: true })} />
+<input type="password" placeholder='Enter Your Password' className='w-80 px-3 py-1 border rounded-md outline-none  dark:bg-slate-800 dark:text-white' {...register("password", { required: true })} />
 <br />
 {errors.password && <span  className='text-sm text-red-500'>This field is required</span>}
    </div>
