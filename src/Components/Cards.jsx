@@ -7,7 +7,7 @@ function Cards({item}) {
       <div className='mt-4 my-4 p-3 flex justify-content: space-evenly;'>
       <div className="card w-92  bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
   <figure >
-    <img src="../../public/card-img.jpg" alt=" card missing" />
+    <img src={item.image} alt=" card missing" />
   </figure>
   <div className="card-body">
     <h2 className="card-title">
